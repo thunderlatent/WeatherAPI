@@ -92,7 +92,9 @@ class MenuBarCollectionController: UICollectionViewController {
         print(passingMenuIndexDelegate.passingMenuIndexToPage(index: scrollToIndexPath.item))
         passingMenuIndexDelegate.passingMenuIndexToPage(index: scrollToIndexPath.item)
         print("現在的scrollToIndexPath = ",scrollToIndexPath)
+        print("Cell類別 ＝ ",MenuBarCollectionViewCell.self)
         let menuBarCell = collectionView.cellForItem(at: scrollToIndexPath ) as! MenuBarCollectionViewCell
+        
         self.menuBarSlider.snp.remakeConstraints { (make) in
             make.height.equalTo(3)
             make.top.equalTo(menuBarCell.pageTabLabel.snp.bottom)

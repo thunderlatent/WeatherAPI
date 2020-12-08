@@ -13,9 +13,8 @@ class MainController: UIViewController,PassingPageIndexToMenuDelegate,PassMenuIn
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
     var usableData: [[String:[List]]] = []
-   
     var dateArray :[String] = []
-   
+    var cityName = ""
     
     //MARK:- UI Element
     let mainView = MainView()
@@ -29,16 +28,16 @@ class MainController: UIViewController,PassingPageIndexToMenuDelegate,PassMenuIn
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = false
         getFiveDayWeatherData {
             DispatchQueue.main.async {
                 self.setupAllUserInterface()
             }
         }
-        
-        
-        //MARK: - Passing Value Delegate
-        
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.topItem?.title = cityName
     }
     //MARK: - Call API
 
@@ -101,7 +100,7 @@ class MainController: UIViewController,PassingPageIndexToMenuDelegate,PassMenuIn
         }()
     private func setupAllUserInterface()
     {
-        
+        navigationController?.navigationBar.isHidden = false
         setupMenuBarCVC()
         setupPageVC()
 

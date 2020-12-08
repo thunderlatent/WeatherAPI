@@ -99,34 +99,34 @@ class ShowDataTableViewCell: UITableViewCell {
             make.bottom.equalTo(-(width * 0.05))
         }
     }
-    func getImage(string: String?) -> UIImage
-    {
-        var image = UIImage(systemName: "person")
-        if let string = string
-        {
-            if let url = URL(string: string)
-            {
-                DispatchQueue.main.async
-                {
-                    let task =  URLSession.shared.dataTask(with: url) { (data, response, error) in
-                        if let error = error
-                        {
-                            print(error)
-                        }
-                        
-                        guard let data = data else {return}
-                        
-                        if let dataToImage = UIImage(data: data)
-                        {
-                            image = dataToImage
-                        }
-                    }
-                    task.resume()
-                }
-            }
-        }
-        return image!
-    }
+    //    func getImage(string: String?) -> UIImage
+    //    {
+    //        var image = UIImage(systemName: "person")
+    //        if let string = string
+    //        {
+    //            if let url = URL(string: string)
+    //            {
+    //                DispatchQueue.main.async
+    //                {
+    //                    let task =  URLSession.shared.dataTask(with: url) { (data, response, error) in
+    //                        if let error = error
+    //                        {
+    //                            print(error)
+    //                        }
+    //
+    //                        guard let data = data else {return}
+    //
+    //                        if let dataToImage = UIImage(data: data)
+    //                        {
+    //                            image = dataToImage
+    //                        }
+    //                    }
+    //                    task.resume()
+    //                }
+    //            }
+    //        }
+    //        return image!
+    //    }
     
     func configure(list: List)
     {
@@ -150,7 +150,11 @@ class ShowDataTableViewCell: UITableViewCell {
         }else if weatherDescription.contains("陰")
         {
             return UIImage(named: "cloudy")!
-        }else
+        }else if weatherDescription.contains("多雲")
+        {
+            return UIImage(named: "cloudy")!
+        }
+        else
         {
             return UIImage(named: "cloudAndSun")!
         }
