@@ -33,7 +33,6 @@
 		536A6CD7256CB20F006CBC6A /* MenuBarCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536A6CD6256CB20F006CBC6A /* MenuBarCollectionController.swift */; };
 		537803D5257779EB008DB1BF /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537803D4257779EA008DB1BF /* UIColor+theme.swift */; };
 		53864F97257DE71500BE8D34 /* GenSenRounded-B.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 53864F96257DE71500BE8D34 /* GenSenRounded-B.ttc */; };
-		53864F9A257DE7AD00BE8D34 /* +FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53864F99257DE7AD00BE8D34 /* +FontName.swift */; };
 		538BDAEF257DDBD8008B01BC /* ListVC+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538BDAEE257DDBD8008B01BC /* ListVC+Delegate.swift */; };
 		538BDAF6257DE092008B01BC /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538BDAF5257DE092008B01BC /* ListTableViewCell.swift */; };
 		53A037C2256CDFFA002869B7 /* ShowDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A037C1256CDFFA002869B7 /* ShowDataViewController.swift */; };
@@ -74,7 +73,6 @@
 		536A6CD6256CB20F006CBC6A /* MenuBarCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarCollectionController.swift; sourceTree = "<group>"; };
 		537803D4257779EA008DB1BF /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
 		53864F96257DE71500BE8D34 /* GenSenRounded-B.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GenSenRounded-B.ttc"; sourceTree = "<group>"; };
-		53864F99257DE7AD00BE8D34 /* +FontName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+FontName.swift"; sourceTree = "<group>"; };
 		538BDAEE257DDBD8008B01BC /* ListVC+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListVC+Delegate.swift"; sourceTree = "<group>"; };
 		538BDAF5257DE092008B01BC /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		53A037C1256CDFFA002869B7 /* ShowDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataViewController.swift; sourceTree = "<group>"; };
@@ -228,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				53864F96257DE71500BE8D34 /* GenSenRounded-B.ttc */,
-				53864F99257DE7AD00BE8D34 /* +FontName.swift */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -361,7 +358,6 @@
 				536A6CA6256BAE56006CBC6A /* Network.swift in Sources */,
 				536A6CB0256BCD98006CBC6A /* WebServices.swift in Sources */,
 				533E199B256E6F4F00A73F2F /* +MenuBarDelegate.swift in Sources */,
-				53864F9A257DE7AD00BE8D34 /* +FontName.swift in Sources */,
 				537803D5257779EB008DB1BF /* UIColor+theme.swift in Sources */,
 				53A037C2256CDFFA002869B7 /* ShowDataViewController.swift in Sources */,
 				536A6CA1256BAD7F006CBC6A /* Identifier.swift in Sources */,
